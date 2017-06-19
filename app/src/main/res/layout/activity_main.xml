@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.billionman.com.assignment_11_3.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <GridLayout
+        android:id="@+id/employeeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+        <TextView
+            android:id="@+id/name"
+            android:text="Name:"
+            style="@style/textBox"
+            android:layout_width="100dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/nameValue"
+            style="@style/textBoxRight"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/age"
+            android:text="Age:"
+            style="@style/textBox"
+            android:layout_width="100dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/ageValue"
+            style="@style/textBoxRight"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+    </GridLayout>
+    <TextView
+        android:text="@string/emp_photo"
+        android:id="@+id/employeePhoto"
+        style="@style/textBox"
+        android:textAlignment="center"
+        android:layout_below="@+id/employeeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <GridLayout
+        android:layout_below="@+id/employeePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/textBoxRight"
+        android:columnCount="1">
+        <ImageView
+            android:id="@+id/emp_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            />
+
+    </GridLayout>
+
+</RelativeLayout>
